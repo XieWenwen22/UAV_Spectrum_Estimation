@@ -163,8 +163,8 @@
         </h2>
          <h2 class="subtitle has-text-justified">
           Our proposed framework consists of two parts. <br>
-          <b>Part A</b> illustrates the GDM training scenario when an expert database is accessible. The process learns from the GDM applications in the image domain: the optimal solution is retrieved from the expert database upon observing an environmental condition, followed by the GDM learning to replicate this optimal solution through forward diffusion and reverse denoising process.<br>
-          <b>Part B</b> presents the scenario where no expert database exists. In this case, GDM, with the assistance of a jointly trained solution evaluation network, learns to generate the optimal solution for a given environmental condition by actively exploring the unknown environment.
+          <b>Part A:</b> In input layer, the prompt engineering is adopted to optimize the prompts of users. In decision layer,  agent retrieves the vector database based on the optimized prompts and selects the data entries with the highest relevance.<br>
+          <b>Part B:</b> Based on the results of Iteraction Part, GDM can solve optimization problem using a trained denoising network based on  the optimization objectives.
         </h2>
       </div>
         <div class="item">
