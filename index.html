@@ -207,9 +207,7 @@
       <p>
         2) Set up LangChain.<br>
         <pre><code>
-          llm = OpenAI(
-            api_key=""
-          )
+          llm = OpenAI(api_key="")
           llm = ChatOpenAI()
           from langchain.text_splitter import RecursiveCharacterTextSplitter
           from langchain_community.embeddings import HuggingFaceBgeEmbeddings
@@ -277,7 +275,9 @@
     <div class="content has-text-justified">
       <p>
         7) Generation.<br>
-        Use Generative diffusion model to solve optimization problem. (<a>https://github.com/HongyangDu/GDMOPT</a>)
+        <pre><code>
+          Use Generative diffusion model to solve optimization problem. (<a>https://github.com/HongyangDu/GDMOPT</a>)
+        </code></pre>
         </p>
     </div>
   </div>
