@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>GDMOPT</title>
+  <title>UAV_Spectrum_Estimation</title>
   <link rel="icon" type="image/x-icon" href="static/images/favico.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -65,22 +65,22 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Beyond Deep Reinforcement Learning: A Tutorial on Generative Diffusion Models in Network Optimization</h1>
+            <h1 class="title is-1 publication-title">Generative AI for Advanced UAV Networking</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                Hongyang Du, Ruichen Zhang, Yinqiu Liu, Jiacheng Wang, Yijing Lin, Zonghang Li, Dusit Niyato, Jiawen Kang, Zehui Xiong, Shuguang Cui, Bo Ai, Haibo Zhou, and Dong In Kim</span>
+                Geng Sun, Wenwen Xie, Dusit Niyato, Hongyang Du, Jiawen Kang, Jing Wu, Sumei Sun, Ping Zhang</span>
                   </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Nanyang Technological University<br>IEEE Communications Surveys & Tutorials</span>
-                  </div>
+<!--                  <div class="is-size-5 publication-authors">-->
+<!--                    <span class="author-block">Nanyang Technological University<br>IEEE Communications Surveys & Tutorials</span>-->
+<!--                  </div>-->
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2308.05384.pdf" target="_blank"
+                        <a href="https://arxiv.org/abs/2404.10556" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -101,19 +101,19 @@
                   </span> -->
 
                   <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/HongyangDu/GDMOPT" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
+<!--                  <span class="link-block">-->
+<!--                    <a href="https://github.com/HongyangDu/GDMOPT" target="_blank"-->
+<!--                    class="external-link button is-normal is-rounded is-dark">-->
+<!--                    <span class="icon">-->
+<!--                      <i class="fab fa-github"></i>-->
+<!--                    </span>-->
+<!--                    <span>Code</span>-->
+<!--                  </a>-->
+<!--                </span>-->
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2308.05384" target="_blank"
+                  <a href="https://arxiv.org/abs/2404.10556" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -138,7 +138,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We initiate our discussion with the foundational knowledge of GDM and the motivation behind their applications in network optimization. This is followed by exploring GDM’s wide applications and fundamental principles and a comprehensive tutorial outlining the steps for using GDM in network optimization. In the context of intelligent networks, we study the impact of GDM on algorithms, e.g., <b>Deep Reinforcement Learning (DRL)</b>, and its implications for key scenarios, e.g., <b>incentive mechanism design</b>, <b>Semantic Communications(SemCom)</b>, <b>Internet of Vehicles (IoV) networks</b>, channel estimation, error correction coding, and channel denoising. We conclude our tutorial by discussing potential future research directions and summarizing the key contributions.
+            With the impressive achievements of chatGPT and Sora, generative artificial intelligence (GAI) has received increasing attention. Not limited to the field of content generation, GAI is also widely used to solve the problems in wireless communication scenarios due to its powerful learning and generalization capabilities. Therefore, we discuss key applications of GAI in improving unmanned aerial vehicle (UAV) communication and networking performance in this article. Specifically, we first review the key technologies of GAI and the important roles of UAV networking. Then, we show how GAI can improve the communication, networking, and security performances of UAV systems. Subsequently, we propose a novel framework of GAI for advanced UAV networking, and then present a case study of UAV-enabled spectrum map estimation and transmission rate optimization based on the proposed framework to verify the effectiveness of GAI-enabled UAV systems. Finally, we discuss some important open directions.
           </p>
         </div>
       </div>
@@ -156,23 +156,33 @@
        <div class="item">
         <!-- Your image here -->
         <div align="center">
-          <img src="static/images/0.jpg" width="70%" alt="Tutorial Structure"/>
+          <img src="static/images/0.png" width="70%" alt="Proposed Framework"/>
         </div>
         <h2 class="subtitle has-text-centered">
-          The structure of our tutorial.
+          The Proposed Framework for UAV Spectrum Estimation.
+        </h2>
+         <h2 class="subtitle has-text-justified">
+          Our proposed framework consists of two parts. <br>
+          <b>Part A</b> illustrates the GDM training scenario when an expert database is accessible. The process learns from the GDM applications in the image domain: the optimal solution is retrieved from the expert database upon observing an environmental condition, followed by the GDM learning to replicate this optimal solution through forward diffusion and reverse denoising process.<br>
+          <b>Part B</b> presents the scenario where no expert database exists. In this case, GDM, with the assistance of a jointly trained solution evaluation network, learns to generate the optimal solution for a given environmental condition by actively exploring the unknown environment.
+        </h2>
+      </div>
+        <div class="item">
+        <!-- Your image here -->
+        <div align="center">
+          <img src="static/images/1.png" width="70%" alt="Case Study1"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          This figure demonstrates the performance of our proposed framework for UAV spectrum estimation.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/1.png" alt="Network Optimization via GDM"/>
+        <img src="static/images/2.png" alt="Case Study2"/>
         <h2 class="subtitle has-text-centered">
-          This figure demonstrates the network optimization via generative diffusion models.
+          This figure demonstrates the comparison of GDM and DDPG.
         </h2>
-        <h2 class="subtitle has-text-justified">
-          GDM training approaches with and without an expert dataset. <br>
-          <b>Part A</b> illustrates the GDM training scenario when an expert database is accessible. The process learns from the GDM applications in the image domain: the optimal solution is retrieved from the expert database upon observing an environmental condition, followed by the GDM learning to replicate this optimal solution through forward diffusion and reverse denoising process.<br> 
-          <b>Part B</b> presents the scenario where no expert database exists. In this case, GDM, with the assistance of a jointly trained solution evaluation network, learns to generate the optimal solution for a given environmental condition by actively exploring the unknown environment.
-        </h2>
+
       </div>
   </div>
 </div>
